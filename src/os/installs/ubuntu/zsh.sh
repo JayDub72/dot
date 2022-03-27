@@ -14,5 +14,7 @@ print_in_purple "\n   Powerlevel9k\n\n"
 
 install_package "Powerlevel9K" "zsh-theme-powerlevel9k"
 
-# exec $(which zsh)
-execute "chsh -s $(which zsh)" "change default shell"
+execute "sleep 1" "change default shell"
+# hack until error fixed -- Password: chsh: PAM: Authentication failure
+exec $(which zsh)
+
