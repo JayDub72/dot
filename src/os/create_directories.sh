@@ -9,7 +9,7 @@ create_directories() {
 
     declare -a DIRECTORIES=(
         "$HOME/docker"
-        "$HOME/Documents/github"
+        "$HOME/documents/github"
     )
 
     for i in "${DIRECTORIES[@]}"; do
