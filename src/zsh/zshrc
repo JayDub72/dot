@@ -41,7 +41,7 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# aliases
+# generic aliases
 alias ls='ls -AGhp --color=auto'
 alias ll='ls -AlFGhp --color=auto'
 
@@ -49,6 +49,9 @@ alias path='echo -e ${PATH//:/\\n}'
 alias reload='exec $SHELL -l'
 
 alias fc='fc() { find $1 -type f 2> /dev/null | wc -l };fc'
+alias duf='du -sh *'
+
+alias psgrep="ps aux | grep -v grep | grep"
 
 # apt update/upgrade/clean-up
 alias aptup='sudo sh -c "apt-get -y update;apt-get -y dist-upgrade;apt-get -y autoremove;apt-get -y autoclean"'
@@ -58,8 +61,7 @@ alias dl='docker ps -a'
 alias dockerup='cd /optd/docker; docker-compose pull; docker-compose up -d'
 alias drm='docker rm $(docker ps -aq)'
 alias ds='docker stop $(docker ps -aq)'
-alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network
- rm `docker network ls -q`'
+alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network rm `docker network ls -q`'
 alias de='de() { docker exec -it $1 ${2:-bash} };de'
 alias df='df() { docker logs -f $1 };df'
 
