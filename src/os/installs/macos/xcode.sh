@@ -24,7 +24,8 @@ install_xcode() {
     # If necessary, prompt user to install `Xcode`.
 
     if ! is_xcode_installed; then
-        open "macappstores://itunes.apple.com/en/app/xcode/id497799835"
+#        open "macappstores://itunes.apple.com/en/app/xcode/id497799835"
+         wget https://download.developer.apple.com/Developer_Tools/Xcode_13.3/Xcode_13.3.xip
     fi
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -81,8 +82,8 @@ main() {
     print_in_purple "   Xcode\n\n"
 
     install_xcode_command_line_tools
-#    install_xcode
-#    set_xcode_developer_directory
+    install_xcode
+    set_xcode_developer_directory
     agree_with_xcode_licence
 
 }
