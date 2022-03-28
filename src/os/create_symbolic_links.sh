@@ -9,7 +9,7 @@ create_symlinks() {
 
     declare -a FILES_TO_SYMLINK=(
 
-        "zsh/"
+        "zsh/zshrc"
 
         "git/gitattributes"
         "git/gitconfig"
