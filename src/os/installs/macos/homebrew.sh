@@ -127,5 +127,6 @@ main() {
     # Mac Utilities
     brew_install "dockutil" "dockutil"
     brew_install "duti" "duti"
-    
+}
+
 main
