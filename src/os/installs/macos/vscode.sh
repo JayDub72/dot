@@ -20,10 +20,15 @@ brew_install "Visual Studio Code" "visual-studio-code" "--cask"
 printf "\n"
 
 # Install the VSCode plugins
-install_plugin "EditorConfig" "EditorConfig.EditorConfig"
+# install_plugin "EditorConfig" "EditorConfig.EditorConfig"
+# install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
+# install_plugin "Vim" "vscodevim.vim"
+install_plugin "Docker" "ms-azuretools.vscode-docker"
+install_plugin "Material Icon Theme" "ms-azuretools.vscode-docker"
+install_plugin "Material Product Icons" "ms-azuretools.vscode-docker"
 install_plugin "File Icons" "vscode-icons-team.vscode-icons"
-install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
-install_plugin "Vim" "vscodevim.vim"
+install_plugin "Material Theme" "zhuangtongfa.material-theme"
+
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Code"'
