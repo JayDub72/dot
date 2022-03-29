@@ -9,3 +9,64 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# manual path and alias updates
+export PATH=$PATH:/opt/homebrew/bin/
+
+# generic aliases
+alias ls='ls -AGhp --color=auto'
+alias ll='ls -AlFGhp --color=auto'
+
+alias path='echo -e ${PATH//:/\\n}'
+alias reload='exec $SHELL -l'
+
+alias fc='fc() { find $1 -type f 2> /dev/null | wc -l };fc'
+alias duf='du -sh *'
+
+alias psgrep="ps aux | grep -v grep | grep"
+
+# apt update/upgrade/clean-up
+alias aptup='sudo sh -c "apt-get -y update;apt-get -y dist-upgrade;apt-get -y autoremove;apt-get -y autoclean"'
+
+# docker aliases
+alias dl='docker ps -a'
+alias dockerup='cd /optd/docker; docker-compose pull; docker-compose up -d'
+alias drm='docker rm $(docker ps -aq)'
+alias ds='docker stop $(docker ps -aq)'
+alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network rm `docker network ls -q`'
+alias de='de() { docker exec -it $1 ${2:-bash} };de'
+alias df='df() { docker logs -f $1 };df'
+
+# grep aliases
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+
+# generic aliases
+alias ls='ls -AGhp --color=auto'
+alias ll='ls -AlFGhp --color=auto'
+
+alias path='echo -e ${PATH//:/\\n}'
+alias reload='exec $SHELL -l'
+
+alias fc='fc() { find $1 -type f 2> /dev/null | wc -l };fc'
+alias duf='du -sh *'
+
+alias psgrep="ps aux | grep -v grep | grep"
+
+# apt update/upgrade/clean-up
+alias aptup='sudo sh -c "apt-get -y update;apt-get -y dist-upgrade;apt-get -y autoremove;apt-get -y autoclean"'
+
+# docker aliases
+alias dl='docker ps -a'
+alias dockerup='cd /optd/docker; docker-compose pull; docker-compose up -d'
+alias drm='docker rm $(docker ps -aq)'
+alias ds='docker stop $(docker ps -aq)'
+alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network rm `docker network ls -q`'
+alias de='de() { docker exec -it $1 ${2:-bash} };de'
+alias df='df() { docker logs -f $1 };df'
+
+# grep aliases
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
