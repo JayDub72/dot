@@ -97,7 +97,35 @@ main() {
     brew_update
     brew_upgrade
 
-    opt_out_of_auto_update
-}
+    brew_install "bat" "bat"
+    brew_install "coreutils" "coreutils"
+    brew_install "curl" "curl"
+    brew install "findutils" "findutils"
+    brew_install "gawk" "gawk"
+    brew_install "grc" "grc"
+    brew_install "grep" "grep"
+    brew_install "java" "java"
+    brew_install "libtool" "libtool"
+    brew_install "moreutils" "moreutils"
+    brew_install "neofetch" "neofetch"
+    brew_install "netpbm" "netbpm"
+    brew_install "nmap" "nmap"
+    brew_install "openssh" "openSSH"
+    brew_install "psgrep" "psgrep"
+    brew_install "pv" "pv"
+    brew_install "p7zip" "p7zip"
+    brew_install "rename" "rename"
+    brew_install "rlwrap" "rlwrap"
+    brew_install "ssh-copy-id" "ssh-copy-id"
+    brew_install "svn" "svn"
+    brew_install "trash" "trash"
+    brew_install "tree" "tree"
+    brew_install "wget" "wget"
+    brew_install "xz" "xz"
+    brew_install "zopfli" "zopfli"
 
+    # Mac Utilities
+    brew_install "dockutil" "dockutil"
+    brew_install "duti" "duti"
+    
 main
