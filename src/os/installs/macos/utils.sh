@@ -16,7 +16,7 @@ brew_install() {
 
     # Check if `Homebrew` is installed.
 
-    if ! cmd_exists "brew"; then
+    if ! cmd_exists "/opt/homebrew/bin/brew"; then
         print_error "$FORMULA_READABLE_NAME ('Homebrew' is not installed)"
         return 1
     fi
@@ -42,7 +42,7 @@ brew_install() {
         print_success "$FORMULA_READABLE_NAME"
     else
         execute \
-            "brew install $FORMULA $ARGUMENTS" \
+            "/opt/homebrew/bin/brew install $FORMULA $ARGUMENTS" \
             "$FORMULA_READABLE_NAME"
     fi
 
@@ -65,13 +65,13 @@ brew_prefix() {
 }
 
 brew_tap() {
-    brew tap "$1" &> /dev/null
+    /opt/homebrew/bin/brew tap "$1" &> /dev/null
 }
 
 brew_update() {
 
     execute \
-        "brew update" \
+        "/opt/homebrew/bin/brew update" \
         "Homebrew (update)"
 
 }
@@ -79,7 +79,7 @@ brew_update() {
 brew_upgrade() {
 
     execute \
-        "brew upgrade" \
+        "/opt/homebrew/bin/brew upgrade" \
         "Homebrew (upgrade)"
 
 }
