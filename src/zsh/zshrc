@@ -35,7 +35,7 @@ alias drm='docker rm $(docker ps -aq)'
 alias ds='docker stop $(docker ps -aq)'
 alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network rm `docker network ls -q`'
 alias de='de() { docker exec -it $1 ${2:-bash} };de'
-alias dl='df() { docker logs -f $1 };df'
+alias dl='dl() { docker logs -f $1 };dl'
 
 # grep aliases
 alias egrep='egrep --color=auto'
