@@ -13,14 +13,14 @@ create_symlinks() {
 
         "shell/$OS/aliases"
         "shell/$OS/functions"
+        "shell/$OS/zshrc"
+
+        "shell/p10k.zsh"
 
         "shell/curlrc"
         "shell/exports"
         "shell/gitconfig.local"
         "shell/profile"
-
-        "zsh/zshrc"
-        "zsh/p10k.zsh"
 
         "git/gitattributes"
         "git/gitconfig"
