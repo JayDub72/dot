@@ -11,5 +11,4 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # manual path and alias updates
-export PATH=$PATH:/opt/homebrew/bin/
-
+export PATH=$PATH
