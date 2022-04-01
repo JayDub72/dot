@@ -1,0 +1,11 @@
+[credential]
+  # cache creds (git help credential-cache)
+  helper = cache
+
+[user]
+  name = Jason Worthen
+  email = jason@worthen.org
+
+[github]
+  # https://github.com/blog/180-local-github-config
+  user = JayDub72

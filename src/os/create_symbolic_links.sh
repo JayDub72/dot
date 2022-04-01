@@ -7,7 +7,17 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 create_symlinks() {
 
+    declare -r OS="$(get_os)"
+
     declare -a FILES_TO_SYMLINK=(
+
+        "shell/$OS/aliases"
+        "shell/$OS/functions"
+
+        "shell/curlrc"
+        "shell/exports"
+        "shell/gitconfig.local"
+        "shell/profile"
 
         "zsh/zshrc"
         "zsh/p10k.zsh"

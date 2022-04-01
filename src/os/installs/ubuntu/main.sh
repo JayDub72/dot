@@ -13,6 +13,7 @@ upgrade
 
 ./git.sh
 ./image_tools.sh
+./misc.sh
 ./../vim.sh
 ./zsh.sh
 

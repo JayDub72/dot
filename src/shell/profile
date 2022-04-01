@@ -1,0 +1,6 @@
+#############################################################
+# Generic configuration that applies to all shells
+#############################################################
+
+source ~/.aliases
+source ~/.functions
