@@ -7,6 +7,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Dock\n\n"
 
+execute "defaults write com.apple.dock orientation -string left" \
+    "Move dock to the left side of the screen"
+
 execute "defaults write com.apple.dock autohide -bool true" \
     "Automatically hide/show the Dock"
 
@@ -47,7 +50,10 @@ execute "defaults write com.apple.dock show-recents -bool false" \
 execute "defaults write com.apple.dock showhidden -bool true" \
     "Make icons of hidden applications translucent"
 
-execute "defaults write com.apple.dock tilesize -int 60" \
+execute "defaults write com.apple.dock hide-mirror -bool true" \
+    "Make Dock more transparent"
+
+execute "defaults write com.apple.dock tilesize -int 36" \
     "Set icon size"
 
 execute "defaults write com.apple.dock wvous-tr-corner -int 0" \
@@ -59,7 +65,7 @@ execute "defaults write com.apple.dock wvous-tl-corner -int 0" \
 execute "defaults write com.apple.dock wvous-bl-corner -int 0" \
     "Disable bottom left hot corner"
 
-execute "defaults write com.apple.dock wvous-br-corner -int 0" \
-    "Disable bottom right hot corner"
+execute "defaults write com.apple.dock wvous-br-corner -int 5" \
+    "Enable bottom right hot corner for Screen Save"
 
 killall "Dock" &> /dev/null

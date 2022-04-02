@@ -7,6 +7,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   UI & UX\n\n"
 
+execute "defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false" \
+    "Menu bar: disable transparency"
+
 execute "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true && \
          defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true" \
    "Avoid creating '.DS_Store' files on network or USB volumes"
@@ -20,11 +23,17 @@ execute "sudo defaults write /Library/Preferences/com.apple.loginwindow showInpu
 execute "defaults write com.apple.CrashReporter UseUNC 1" \
     "Make crash reports appear as notifications"
 
+execute "sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist > /dev/null 2>&1" \
+    "Allow 'locate' command to run"
+
 execute "defaults write com.apple.LaunchServices LSQuarantine -bool false" \
     "Disable 'Are you sure you want to open this application?' dialog"
 
 execute "defaults write com.apple.print.PrintingPrefs 'Quit When Finished' -bool true" \
     "Automatically quit the printer app once the print jobs are completed"
+
+execute "sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false" \
+    "Disable guest account login"
 
 execute "defaults write com.apple.screencapture disable-shadow -bool true" \
     "Disable shadow in screenshots"
@@ -57,6 +66,9 @@ execute "defaults write -g NSDisableAutomaticTermination -bool true" \
 execute "defaults write -g NSNavPanelExpandedStateForSaveMode -bool true" \
     "Expand save panel by default"
 
+execute "defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false" \
+    "Save to disk (not to iCloud) by default"
+
 execute "defaults write -g NSTableViewDefaultSizeMode -int 2" \
     "Set sidebar icon size to medium"
 
@@ -75,10 +87,10 @@ execute "defaults write -g QLPanelAnimationDuration -float 0" \
 execute "defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false" \
     "Disable resume system-wide"
 
-execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'Laptop' && \
-         sudo scutil --set ComputerName 'laptop' && \
-         sudo scutil --set HostName 'laptop' && \
-         sudo scutil --set LocalHostName 'laptop'" \
+execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string 'tycho' && \
+         sudo scutil --set ComputerName 'tycho' && \
+         sudo scutil --set HostName 'tycho' && \
+         sudo scutil --set LocalHostName 'tycho'" \
     "Set computer name"
 
 execute "sudo systemsetup -setrestartfreeze on" \
