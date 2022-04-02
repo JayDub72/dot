@@ -6,8 +6,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Force iTerm to check ~/.dotfiles/.iTerm2 directory for configuration
-cp ${HOME}/dot/src/os/preferences/iterm2/com.googlecode.iterm2.plist ${HOME}/.dotfiles/iterm2
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${HOME}/.dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${HOME}/.dotfiles/src/os/preferences/macos/iterm2"
 execute "defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true" \
     "Force iTerm2 to check ~/.dotfiles/iterm2 directory for configuration"
 
