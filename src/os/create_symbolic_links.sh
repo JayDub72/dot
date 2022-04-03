@@ -14,7 +14,7 @@ create_symlinks() {
         "shell/$OS/aliases"
         "shell/$OS/functions"
         "shell/$OS/zshrc"
-i
+
         "shell/p10k.zsh"
 
         "shell/curlrc"
