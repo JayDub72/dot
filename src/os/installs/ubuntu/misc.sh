@@ -5,4 +5,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-install_package "psgrep" "psgrep"
+install_package "Neofetch" "neofetch"
