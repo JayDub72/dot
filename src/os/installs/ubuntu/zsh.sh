@@ -10,7 +10,7 @@ print_in_purple "\n   ZSH\n\n"
 
 install_package "ZSH" "zsh zsh-syntax-highlighting zsh-autosuggestions"
 
-execute "sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"" \
+execute "sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"" \
     "Installing Oh My Zsh"
 
 execute "git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k" \
