@@ -16,7 +16,7 @@ execute "defaults write com.googlecode.iterm2 PromptOnQuit -bool false" \
 execute  "/usr/libexec/PlistBuddy -c "set \"New Bookmarks\":0:\"Custom Directory\" Recycle" ~/Library/Preferences/com.googlecode.iterm2.plist" \
     "Make iTerm2 load new tabs in the same directory"
 
-execute "exec sh ${HOME}/dot/src/os/preferences/iterm2/material-design-colors.itermcolors" \
+execute "exec sh ${HOME}/.dotfiles/src/os/preferences/iterm2/material-design-colors.itermcolors" \
     "Install Material Theme for iTerm2" 
 
 
