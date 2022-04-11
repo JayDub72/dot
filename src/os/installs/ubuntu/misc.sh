@@ -8,3 +8,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Misc\n\n"
 
 install_package "Neofetch" "neofetch"
+
+install_package "Tree" "tree"
