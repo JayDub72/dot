@@ -106,9 +106,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# powerlevel10k theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# zsh add-ons
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# custom aliases and functions
+source ~/.dotfiles/src/shell/ubuntu/aliases
+source ~/.dotfiles/src/shell/ubuntu/aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
