@@ -54,16 +54,9 @@ install_oh-my-zsh() {
 
     if [ ! -d $ZSH ]; then
         sudo rm -rf ~/.oh-my-zsh
-        git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH > omz-install.txt
+        git clone --quiet https://github.com/robbyrussell/oh-my-zsh.git $ZSH
     fi
-
-    ZSH_THEME_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-    
-    if [ ! -d "$ZSH_THEME_DIR" ]; then
-        sudo rm -rf ~/.oh-my-zsh
-        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_THEME_DIR" > omz-install.txt
-    fi
-
+ 
 }
 package_is_installed() {
     dpkg -s "$1" &> /dev/null
