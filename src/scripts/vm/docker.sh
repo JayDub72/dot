@@ -25,3 +25,6 @@ sudo wget --output-document=/usr/local/bin/docker-compose "https://github.com/do
 sudo chmod +x /usr/local/bin/docker-compose
 sudo wget --output-document=/etc/bash_completion.d/docker-compose "https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose"
 printf '\nDocker Compose installed successfully\n\n'
+
+# change ownership of docker.sock file -- permission issues
+sudo chown $(whoami):$(whoami) /var/run/docker.sock
