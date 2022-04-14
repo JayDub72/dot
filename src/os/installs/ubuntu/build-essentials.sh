@@ -13,6 +13,7 @@ print_in_purple "\n   Build Essentials\n\n"
 
 # GnuPG archive keys of the Debian archive.
 install_package "GnuPG archive keys" "debian-archive-keyring"
+install_package "Network Tools" "net-tools"
 
 # Software which is not included by default
 # in Ubuntu due to legal or copyright reasons.
