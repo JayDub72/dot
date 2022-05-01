@@ -5,10 +5,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Hack for Homebrew path
+export PATH=/opt/homebrew/bin:$PATH
+
 source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# custom aliases and functions
+source ~/.aliases
+source ~/.functions
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# manual path and alias updates
-export PATH=$PATH:/opt/homebrew/bin/
+# lscolor hack for 777 files/directories
+LS_COLORS=$LS_COLORS:'ow=1;37:' ; export LS_COLORS
