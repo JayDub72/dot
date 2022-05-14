@@ -28,6 +28,7 @@ alias c="clear"
 alias ch="history -c && > ~/.zsh_history"
 alias e="vim --"
 alias g="git"
+alias "ls"
 alias ls='ls -AGhp --color=auto'
 alias ll='ls -AlFGhp --color=auto'
 alias m="man"
@@ -106,6 +107,10 @@ alias grep='grep --color'
 alias more='bat -p'
 alias cat='bat'
 
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+
 # find/disk util aliases
 alias dud='du -d 1 -h'
 alias duf='du -sh *'
@@ -123,6 +128,7 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 
 # Show network connections
 # Often useful to prefix with SUDO to see more system level network usage
+alias net_restart='sudo killapp -HUP mDNSResponder'
 alias network.connections='lsof -l -i +L -R -V'
 alias network.established='lsof -l -i +L -R -V | grep ESTABLISHED'
 alias network.externalip='curl -s http://checkip.dyndns.org/ | sed "s/[a-zA-Z<>/ :]//g"'
