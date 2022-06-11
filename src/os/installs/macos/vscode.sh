@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 install_plugin() {
-    execute "/opt/homebrew/bin/code --install-extension $2" "$1 (plugin)"
+    execute "/opt/homebrew/bin/codium --install-extension $2" "$1 (plugin)"
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -24,11 +24,10 @@ printf "\n"
 # install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 # install_plugin "Vim" "vscodevim.vim"
 install_plugin "Docker" "ms-azuretools.vscode-docker"
-install_plugin "Material Icon Theme" "ms-azuretools.vscode-docker"
-install_plugin "Material Product Icons" "ms-azuretools.vscode-docker"
+install_plugin "Material Icon Theme" "pkief.material-icon-theme"
+install_plugin "Material Product Icons" "pkief.material-product-icons"
 install_plugin "File Icons" "vscode-icons-team.vscode-icons"
 install_plugin "Material Theme" "zhuangtongfa.material-theme"
 
-
 # Close VSCode
-osascript -e 'quit app "Visual Studio Code"'
+osascript -e 'quit app "Visual Studio Codium"'
