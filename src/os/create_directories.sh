@@ -8,8 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 create_directories() {
 
     declare -a DIRECTORIES=(
-        "$HOME/docker"
-        "$HOME/documents/github"
+        "$HOME/Documents/Docker"
+        "$HOME/Documents/github"
     )
 
     for i in "${DIRECTORIES[@]}"; do
