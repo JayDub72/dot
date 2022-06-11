@@ -28,9 +28,9 @@ alias c="clear"
 alias ch="history -c && > ~/.zsh_history"
 alias e="vim --"
 alias g="git"
-alias "ls"
 alias ls='ls -AGhp --color=auto'
 alias ll='ls -AlFGhp --color=auto'
+alias la='ls -laGhp --color=auto'
 alias m="man"
 alias map="xargs -n1"
 alias path='printf "%b\n" "${PATH//:/\\n}"'
@@ -96,20 +96,20 @@ alias o="open"
 # Update applications and CLTs.
 
 alias u="sudo softwareupdate --install --all \
-            && brew update \
+            && brew update --quiet \
             && brew upgrade \
             && brew cleanup"
 
 ################################
 # Custom aliases
-alias p='cd ~/Documents/github'
+alias cat='bat'
 alias grep='grep --color'
 alias more='bat -p'
-alias cat='bat'
+alias p='cd ~/Documents/github'
+alias rm='rm -rf'
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
-
 
 # find/disk util aliases
 alias dud='du -d 1 -h'
