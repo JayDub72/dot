@@ -10,7 +10,7 @@ print_in_purple "\n   Dock\n\n"
 execute "defaults write com.apple.dock orientation -string left" \
     "Move dock to the left side of the screen"
 
-execute "defaults write com.apple.dock autohide -bool true" \
+execute "defaults write com.apple.dock autohide -bool false" \
     "Automatically hide/show the Dock"
 
 execute "defaults write com.apple.dock autohide-delay -float 0" \
@@ -40,6 +40,18 @@ execute "defaults write com.apple.dock mru-spaces -bool false" \
 execute "defaults write com.apple.dock persistent-apps -array && \
          defaults write com.apple.dock persistent-others -array " \
     "Wipe all app icons"
+
+exeute "dockutil --add '/Applications/Safari.app/" \
+    "Add applications to Dock"
+exeute "dockutil --add '/Applications/Firefox.app/"
+exeute "dockutil --add '/Applications/iTerm.app/"
+exeute "dockutil --add '/Applications/Notion.app/"
+exeute "dockutil --add '/Applications/Spotify.app/"
+exeute "dockutil --add '/Applications/Messages.app/"
+exeute "dockutil --add '/Applications/VSCodium.app/"
+exeute "dockutil --add '/Applications' --view grid --display folder --sort name --section others --allhomes"
+exeute "dockutil --add '~/Documents' --view list --display folder --sort name --section others --allhomes"
+exeute "dockutil --add '~/Downloads' --view list --display folder --sort name --section others --allhomes"
 
 execute "defaults write com.apple.dock show-process-indicators -bool true" \
     "Show indicator lights for open applications"
