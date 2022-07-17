@@ -44,7 +44,7 @@ execute "defaults write com.apple.screencapture location -string '$HOME/Desktop'
 execute "defaults write com.apple.screencapture show-thumbnail -bool false" \
     "Do not show thumbnail"
 
-execute "defaults write com.apple.screencapture type -string 'png'" \
+execute "defaults write com.apple.screencapture type -string 'jpg'" \
     "Save screenshots as PNGs"
 
 execute "defaults write com.apple.screensaver askForPassword -int 1 && \
@@ -92,6 +92,9 @@ execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.
          sudo scutil --set HostName 'tycho' && \
          sudo scutil --set LocalHostName 'tycho'" \
     "Set computer name"
+
+execute "sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd" \
+    "Disable annoying disk warning when unplugging USB drives"
 
 execute "sudo systemsetup -setrestartfreeze on" \
     "Restart automatically if the computer freezes"

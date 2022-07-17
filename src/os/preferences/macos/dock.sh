@@ -10,11 +10,14 @@ print_in_purple "\n   Dock\n\n"
 execute "defaults write com.apple.dock orientation -string left" \
     "Move dock to the left side of the screen"
 
-execute "defaults write com.apple.dock autohide -bool false" \
+execute "defaults write com.apple.dock autohide -bool true" \
     "Automatically hide/show the Dock"
 
 execute "defaults write com.apple.dock autohide-delay -float 0" \
     "Disable the hide Dock delay"
+
+execute "defaults write com.apple.dock autohide-time-modifier -int 0" \
+    "CHange autohide timer to 0 seconds"    
 
 execute "defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true" \
     "Enable spring loading for all Dock items"
@@ -41,8 +44,12 @@ execute "defaults write com.apple.dock persistent-apps -array && \
          defaults write com.apple.dock persistent-others -array " \
     "Wipe all app icons"
 
+execute "defaults write com.apple.Dock showhidden -bool TRUE && killall Dock" \
+    "Make hidden apps transparent in the dock"
+    
 exeute "dockutil --add '/Applications/Safari.app/" \
     "Add applications to Dock"
+
 exeute "dockutil --add '/Applications/Firefox.app/"
 exeute "dockutil --add '/Applications/iTerm.app/"
 exeute "dockutil --add '/Applications/Notion.app/"
