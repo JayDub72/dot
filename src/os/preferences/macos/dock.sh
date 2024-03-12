@@ -47,7 +47,7 @@ execute "defaults write com.apple.dock persistent-apps -array && \
 execute "defaults write com.apple.Dock showhidden -bool TRUE && killall Dock" \
     "Make hidden apps transparent in the dock"
     
-exeute "dockutil --add '/Applications/Safari.app/" \
+exeute "dockutil --add '/Applications/Safari.app/'" \
     "Add applications to Dock"
 
 exeute "dockutil --add '/Applications/Firefox.app/'"

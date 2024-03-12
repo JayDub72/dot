@@ -49,7 +49,7 @@ execute "defaults write com.apple.finder ShowRecentTags -bool false" \
 execute "defaults write -g AppleShowAllExtensions -bool true" \
     "Show all filename extensions"
 
-execute "defaults write com.apple.finder AppleShowAll Files -bool true" \
+execute "defaults write com.apple.Finder AppleShowAllFiles -bool true" \
     "Show hidden files by default"
 
 execute "defaults write com.apple.finder ShowStatusBar -bool true" \
