@@ -28,9 +28,11 @@ alias c="clear"
 alias ch="history -c && > ~/.zsh_history"
 alias e="vim --"
 alias g="git"
-alias ls='ls -AGhp --color=auto'
-alias ll='ls -AlFGhp --color=auto'
-alias la='ls -laGhp --color=auto'
+# alias ls='ls -AGhp --color=auto'
+# alias ll='ls -AlFGhp --color=auto'
+# alias la='ls -laGhp --color=auto'
+alias ls='eza -a --icons --no-user'
+alias ll='eza -al --no-user'
 alias m="man"
 alias map="xargs -n1"
 alias path='printf "%b\n" "${PATH//:/\\n}"'

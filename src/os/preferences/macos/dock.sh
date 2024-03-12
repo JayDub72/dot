@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Dock\n\n"
 
-execute "defaults write com.apple.dock orientation -string left" \
+execute "defaults write com.apple.dock orientation -string bottom" \
     "Move dock to the left side of the screen"
 
 execute "defaults write com.apple.dock autohide -bool true" \
