@@ -100,7 +100,7 @@ main() {
     brew_install "bat" "bat"
     brew_install "coreutils" "coreutils"
     brew_install "curl" "curl"
-    brew_install "eza" "eza - improved ls"
+    brew_install "eza - improved ls" "eza"
     brew_install "findutils" "findutils"
     brew_install "gawk" "gawk"
     brew_install "grc" "grc"
