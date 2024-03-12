@@ -16,7 +16,7 @@ execute "defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -b
 execute "defaults write com.googlecode.iterm2 PromptOnQuit -bool false" \
     "Don't display the annoying prompt when quitting iTerm2" 
 
-execute "exec sh ${HOME}/.dotfiles/src/os/preferences/macos/iterm2/materialshell-dark.itermcolors" \
-    "Install Material Theme for iTerm2" 
+# execute "exec sh ${HOME}/.dotfiles/src/os/preferences/macos/iterm2/materialshell-dark.itermcolors" \
+#    "Install Material Theme for iTerm2" 
 
 
