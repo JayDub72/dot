@@ -50,12 +50,12 @@ execute "defaults write com.apple.Dock showhidden -bool TRUE && killall Dock" \
 exeute "dockutil --add '/Applications/Safari.app/" \
     "Add applications to Dock"
 
-exeute "dockutil --add '/Applications/Firefox.app/"
-exeute "dockutil --add '/Applications/iTerm.app/"
-exeute "dockutil --add '/Applications/Notion.app/"
-exeute "dockutil --add '/Applications/Spotify.app/"
-exeute "dockutil --add '/Applications/Messages.app/"
-exeute "dockutil --add '/Applications/VSCodium.app/"
+exeute "dockutil --add '/Applications/Firefox.app/'"
+exeute "dockutil --add '/Applications/iTerm.app/'"
+exeute "dockutil --add '/Applications/Notion.app/'"
+exeute "dockutil --add '/Applications/Spotify.app/'"
+exeute "dockutil --add '/Applications/Messages.app/'"
+exeute "dockutil --add '/Applications/VSCodium.app/'"
 exeute "dockutil --add '/Applications' --view grid --display folder --sort name --section others --allhomes"
 exeute "dockutil --add '~/Documents' --view list --display folder --sort name --section others --allhomes"
 exeute "dockutil --add '~/Downloads' --view list --display folder --sort name --section others --allhomes"
