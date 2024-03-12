@@ -6,7 +6,7 @@ tell application "Terminal"
     local initialOpenedWindows
     local windowID
 
-    set themeName to "materialshell-dark"
+    set themeName to "iterm2/materialshell-dark"
 
     (* Store the IDs of all the open terminal windows. *)
     set initialOpenedWindows to id of every window
