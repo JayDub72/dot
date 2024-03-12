@@ -15,4 +15,4 @@ brew_install "zsh completions" "zsh-completions"
 
 print_in_purple "\n   Powerlevel10k\n\n"
 
-brew_install "Powerlevel10K" "romkatv/powerlevel10k/powerlevel10k"
+brew_install "Powerlevel10K" "powerlevel10k"
