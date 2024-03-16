@@ -31,8 +31,8 @@ alias g="git"
 # alias ls='ls -AGhp --color=auto'
 # alias ll='ls -AlFGhp --color=auto'
 # alias la='ls -laGhp --color=auto'
-alias ls='eza -a --icons --no-user'
-alias ll='eza -al --no-user'
+alias ls='eza -a --group-directories-first --no-quotes'
+alias ll='eza --long --header --git --all --group-directories-first --no-quotes'
 alias m="man"
 alias map="xargs -n1"
 alias path='printf "%b\n" "${PATH//:/\\n}"'
@@ -97,7 +97,7 @@ alias o="open"
 
 # Update applications and CLTs.
 
-alias u="sudo softwareupdate --install --all \
+alias update="sudo softwareupdate --install --all \
             && brew update --quiet \
             && brew upgrade \
             && brew cleanup"
