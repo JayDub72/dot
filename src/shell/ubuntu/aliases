@@ -94,7 +94,7 @@ alias reload="exec $SHELL -l"
 
 # docker aliases
 alias dl='docker ps -a'
-alias dockerup='cd /optd/docker; docker-compose pull; docker-compose up -d'
+alias dockerup='sudo docker compose pull; sudo docker compose up -d'
 alias drm='docker rm $(docker ps -aq)'
 alias ds='docker stop $(docker ps -aq)'
 alias dclean='docker stop `docker ps -qa` && docker rm `docker ps -qa` && docker rmi -f `docker images -qa ` && docker volume rm $(docker volume ls -qf) && docker network rm `docker network ls -q`'

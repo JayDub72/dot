@@ -19,6 +19,7 @@ execute "defaults write com.apple.Terminal ShowLineMarks -int 0" \
 execute "defaults write com.apple.terminal StringEncodings -array 4" \
     "Only use UTF-8"
 
+# this failued - cant set settings set "iterm2/" to settings 
 execute "./set_terminal_theme.applescript" \
     "Set custom terminal theme"
 

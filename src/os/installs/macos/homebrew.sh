@@ -102,6 +102,7 @@ main() {
     brew_install "curl" "curl"
     brew_install "eza - improved ls" "eza"
     brew_install "findutils" "findutils"
+    brew_install "fzf" "fzf"
     brew_install "gawk" "gawk"
     brew_install "grc" "grc"
     brew_install "grep" "grep"

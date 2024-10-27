@@ -21,7 +21,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./language_and_region.sh
 ./maps.sh
 ./photos.sh
-./safari.sh
+# ./safari.sh #these all failed - will need to update for Sequoia
 ./terminal.sh
 ./textedit.sh
 ./trackpad.sh
