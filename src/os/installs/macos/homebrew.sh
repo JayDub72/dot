@@ -132,7 +132,7 @@ main() {
 
     # RPG tools
     brew_tap "ebullient/tap"
-    brew_install "Utility to convert 5eTools and Pf2eTools JSON data into Markdown" "ttrrpg-convert-cli"
+    brew_install "Utility to convert 5eTools and Pf2eTools JSON data into Markdown" "ttrpg-convert-cli"
 }
 
 main
