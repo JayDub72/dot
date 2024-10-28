@@ -8,8 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Git\n\n"
 
-brew_install "Git" "git"
-brew_install "Git Extras" "git-extras"
-brew_install "Git LFS" "git-lfs"
-brew_install "Git Flow" "git-flow"
-brew_install "GitHub auth" "gh"
+brew_install "Distributed revision control system" "git"
+brew_install "mall git utilities" "git-extras"
+brew_install "Git extension for versioning large files" "git-lfs"
+brew_install "Extensions to follow Vincent Driessen's branching model" "git-flow"
+brew_install "GitHub command-line tool" "gh"

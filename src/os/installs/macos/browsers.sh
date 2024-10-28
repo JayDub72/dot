@@ -18,7 +18,7 @@ printf "\n"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-brew_install "Firefox" "firefox" "--cask"
+brew_install "Firefox web browser" "firefox" "--cask"
 # brew_install "Firefox Developer" "firefox-developer-edition" "--cask" "homebrew/cask-versions"
 # brew_install "Firefox Nightly" "firefox-nightly" "--cask" "homebrew/cask-versions"
  

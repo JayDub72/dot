@@ -97,37 +97,41 @@ main() {
     brew_update
     brew_upgrade
 
-    brew_install "bat" "bat"
-    brew_install "coreutils" "coreutils"
-    brew_install "curl" "curl"
-    brew_install "eza - improved ls" "eza"
-    brew_install "findutils" "findutils"
-    brew_install "fzf" "fzf"
-    brew_install "gawk" "gawk"
-    brew_install "grc" "grc"
-    brew_install "grep" "grep"
-    brew_install "java" "java"
-    brew_install "libtool" "libtool"
-    brew_install "moreutils" "moreutils"
-    brew_install "neofetch" "neofetch"
-    brew_install "nmap" "nmap"
-    brew_install "openssh" "openSSH"
-    brew_install "psgrep" "psgrep"
-    brew_install "pv" "pv"
-    brew_install "p7zip" "p7zip"
-    brew_install "rename" "rename"
-    brew_install "rlwrap" "rlwrap"
-    brew_install "ssh-copy-id" "ssh-copy-id"
-    brew_install "svn" "svn"
-    brew_install "trash" "trash"
-    brew_install "tree" "tree"
-    brew_install "wget" "wget"
-    brew_install "xz" "xz"
-    brew_install "zopfli" "zopfli"
+    brew_install "Clone of cat(1) with syntax highlighting and Git integration" "bat"
+    brew_install "GNU File, Shell, and Text utilities" "coreutils"
+    brew_install "Get a file from an HTTP, HTTPS or FTP server" "curl"
+    brew_install "Modern, maintained replacement for ls" "eza"
+    brew_install "Collection of GNU find, xargs, and locate" "findutils"
+    brew_install "Command-line fuzzy finder written in Go" "fzf"
+    # brew_install "GNU awk utility" "gawk" # not sure this is needed anymore
+    brew_install "Colorize logfiles and command output" "grc"
+    brew_install "GNU grep, egrep and fgrep" "grep"
+    # brew_install "java" "java" # not sure this is needed anymore
+    # brew_install "libtool" "libtool" # not sure this is needed anymore
+    brew_install "Collection of tools that nobody wrote when UNIX was young" "moreutils"
+    brew_install "Fast, highly customisable system info script" "neofetch"
+    brew_install "Port scanning utility for large networks" "nmap"
+    brew_install "OpenBSD freely-licensed SSH connectivity tools" "openSSH"
+    brew_install "7-Zip (high compression file archiver) implementation" "p7zip"
+    brew_install "Shortcut for the 'ps aux | grep' idiom" "psgrep"
+    # brew_install "pv" "pv" # not sure this is needed anymore
+    brew_install "Perl-powered file rename script with many helpful built-ins" "rename"
+    # brew_install "rlwrap" "rlwrap" # not sure this is needed anymore
+    brew_install "Add a public key to a remote machine's authorized_keys file" "ssh-copy-id"
+    # brew_install "svn" "svn" # not sure this is needed anymore
+    brew_install "CLI tool that moves files or folder to the trash" "trash"
+    brew_install "Display directories as trees (with optional color/HTML output)" "tree"
+    brew_install "Internet file retriever" "wget"
+    # brew_install "xz" "xz" # not sure this is needed anymore
+    brew_install "New zlib (gzip, deflate) compatible compressor" "zopfli"
 
     # Mac Utilities
-    brew_install "dockutil" "dockutil"
-    brew_install "duti" "duti"
+    brew_install "Tool for managing dock items" "dockutil"
+    brew_install "Select default apps for documents and URL schemes on macOS" "duti"
+    brew_install "Perl lib for reading and writing EXIF metadata" "exiftool"
+
+    # RPG tools
+    brew_install Utility to convert 5eTools and Pf2eTools JSON data into Markdown" "ttrrpg-convert-cli"
 }
 
 main

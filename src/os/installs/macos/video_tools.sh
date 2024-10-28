@@ -8,5 +8,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Video Tools\n\n"
 
-brew_install "VLC" "vlc"
+brew_install "Multimedia player (VLC)" "vlc"
  

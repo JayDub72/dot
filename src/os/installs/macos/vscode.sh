@@ -15,7 +15,7 @@ install_plugin() {
 print_in_purple "\n   Visual Studio Code\n\n"                                :
 
 # Install VSCode
-brew_install "Visual Studio Codium" "vscodium" "--cask"
+brew_install "Binary releases of VS Code without MS branding/telemetry/licensing" "vscodium"
 
 printf "\n"
 
