@@ -15,6 +15,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Fonts\n\n"
 brew_install "freetype fonts" "freetype"
-brew_install "MesloLG Nerd Font Families (Meslo LG)" "font-meslo-lg-nerd-font"
+brew_install "Meslo Nerd Font for Powerlevel10K" "font-meslo-for-powerlevel10k"
+# brew_install "MesloLG Nerd Font Families (Meslo LG)" "font-meslo-lg-nerd-font"
 brew_install "JetBrains Mono" "font-jetbrains-mono"
 brew_install "JetBrains Mono Nerd Font Families" "font-jetbrains-mono-nerd-font"
