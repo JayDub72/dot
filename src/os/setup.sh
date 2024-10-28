@@ -283,6 +283,10 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    ./post-install/dock.sh
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
     if ! $skipQuestions; then
         ./restart.sh
     fi
