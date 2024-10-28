@@ -1,4 +1,5 @@
 #!/bin/sh
+# DO NOT USE - NOT CALLED ANYMORE
 
 # remove all existing icons from the dock
 dockutil -r all
