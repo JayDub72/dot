@@ -97,7 +97,7 @@ execute "dockutil --add /Applications/Notion.app/" \
 execute "dockutil --add /Applications/Obsidian.app/" \
     "Add Obsidian to the dock"
 
-execute "Spotify --add /Applications/Spotify.app/" \
+execute "dockutil --add /Applications/Spotify.app/" \
     "Add Spotify to the dock"
 
 execute "dockutil --add /Applications/VSCodium.app/" \
@@ -112,5 +112,5 @@ execute "dockutil --add ~/Documents --view list --display folder --sort name --s
 execute "dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes" \
     "Add Downloads to the dock"
 
-execute "killall "Dock" &> /dev/null
+execute "killall ""Dock"" &> /dev/null" \
     "Restart the dock"
