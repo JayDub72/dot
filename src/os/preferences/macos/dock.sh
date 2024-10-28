@@ -47,19 +47,6 @@ execute "defaults write com.apple.dock persistent-apps -array && \
 execute "defaults write com.apple.Dock showhidden -bool TRUE && killall Dock" \
     "Make hidden apps transparent in the dock"
     
-exeute "dockutil --add '/Applications/Safari.app/'" \
-    "Add applications to Dock"
-
-execute "dockutil --add /Applications/Firefox.app/"
-execute "dockutil --add /Applications/iTerm.app/"
-execute "dockutil --add /Applications/Notion.app/"
-execute "dockutil --add /Applications/Spotify.app/"
-execute "dockutil --add /Applications/Messages.app/"
-execute "dockutil --add /Applications/VSCodium.app/"
-execute "dockutil --add /Applications --view grid --display folder --sort name --section others --allhomes"
-execute "dockutil --add ~/Documents --view list --display folder --sort name --section others --allhomes"
-execute "dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes"
-
 execute "defaults write com.apple.dock show-process-indicators -bool true" \
     "Show indicator lights for open applications"
 

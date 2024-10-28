@@ -8,6 +8,7 @@ dockutil --add /Applications/Safari.app/
 dockutil --add /Applications/Firefox.app/
 dockutil --add /Applications/iTerm.app/
 dockutil --add /Applications/Notion.app/
+dockutil --add /Applications/Obsidian.app/
 dockutil --add /Applications/Spotify.app/
 dockutil --add /System/Applications/Messages.app/
 dockutil --add /Applications/VSCodium.app/
