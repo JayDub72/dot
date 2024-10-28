@@ -14,6 +14,8 @@ print_in_purple "\n   Web Font Tools\n\n"
 # brew_install "Web Font Tools: WOFF2" "woff2" "" "bramstein/webfonttools"
 
 brew_install "freetype fonts" "freetype"
+brew_install "font-meslo-lg-nerd-font"
+brew_install "font-jetbrains-mono"
 
 # these fonts failed - need to fix
 
