@@ -75,41 +75,41 @@ execute "defaults write com.apple.dock wvous-br-corner -int 5" \
     "Enable bottom right hot corner for Screen Save"
 
 # remove all existing icons from the dock
-execute "dockutil -r all" \
+execute "/opt/homebrew/bin/dockutil -r all" \
     "Clearing dock incons"
 
 # add preferred icons to the dock
-execute "dockutil --add /Applications/Safari.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/Safari.app/" \
     "Add Safari to the dock"
 
-execute "dockutil --add /Applications/Firefox.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/Firefox.app/" \
     "Add Firefox to the dock"
 
-execute "dockutil --add /Applications/iTerm.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/iTerm.app/" \
     "Add iTerm to the dock"
 
-execute "dockutil --add /System/Applications/Messages.app/" \
+execute "/opt/homebrew/bin/dockutil --add /System/Applications/Messages.app/" \
     "Add Messages to the dock"
 
-execute "dockutil --add /Applications/Notion.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/Notion.app/" \
     "Add Notion to the dock"
 
-execute "dockutil --add /Applications/Obsidian.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/Obsidian.app/" \
     "Add Obsidian to the dock"
 
-execute "dockutil --add /Applications/Spotify.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/Spotify.app/" \
     "Add Spotify to the dock"
 
-execute "dockutil --add /Applications/VSCodium.app/" \
+execute "/opt/homebrew/bin/dockutil --add /Applications/VSCodium.app/" \
     "Add VS Codium to the dock"
 
-execute "dockutil --add /Applications --view grid --display folder --sort name --section others --allhomes" \
+execute "/opt/homebrew/bin/dockutil --add /Applications --view grid --display folder --sort name --section others --allhomes" \
     "Add Applications to the dock"
 
-execute "dockutil --add ~/Documents --view list --display folder --sort name --section others --allhomes" \
+execute "/opt/homebrew/bin/dockutil --add ~/Documents --view list --display folder --sort name --section others --allhomes" \
     "Add Documents to the dock"
 
-execute "dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes" \
+execute "/opt/homebrew/bin/dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes" \
     "Add Downloads to the dock"
 
 execute "killall ""Dock"" &> /dev/null" \
