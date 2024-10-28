@@ -131,7 +131,7 @@ main() {
     brew_install "Perl lib for reading and writing EXIF metadata" "exiftool"
 
     # RPG tools
-    brew_install Utility to convert 5eTools and Pf2eTools JSON data into Markdown" "ttrrpg-convert-cli"
+    brew_install "Utility to convert 5eTools and Pf2eTools JSON data into Markdown" "ttrrpg-convert-cli"
 }
 
 main
