@@ -50,15 +50,15 @@ execute "defaults write com.apple.Dock showhidden -bool TRUE && killall Dock" \
 exeute "dockutil --add '/Applications/Safari.app/'" \
     "Add applications to Dock"
 
-execute "/opt/homebrew/bin/dockutil --add /Applications/Firefox.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications/iTerm.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications/Notion.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications/Spotify.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications/Messages.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications/VSCodium.app/"
-execute "/opt/homebrew/bin/dockutil --add /Applications --view grid --display folder --sort name --section others --allhomes"
-execute "/opt/homebrew/bin/dockutil --add ~/Documents --view list --display folder --sort name --section others --allhomes"
-execute "/opt/homebrew/bin/dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes"
+execute "dockutil --add /Applications/Firefox.app/"
+execute "dockutil --add /Applications/iTerm.app/"
+execute "dockutil --add /Applications/Notion.app/"
+execute "dockutil --add /Applications/Spotify.app/"
+execute "dockutil --add /Applications/Messages.app/"
+execute "dockutil --add /Applications/VSCodium.app/"
+execute "dockutil --add /Applications --view grid --display folder --sort name --section others --allhomes"
+execute "dockutil --add ~/Documents --view list --display folder --sort name --section others --allhomes"
+execute "dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes"
 
 execute "defaults write com.apple.dock show-process-indicators -bool true" \
     "Show indicator lights for open applications"
