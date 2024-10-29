@@ -111,6 +111,3 @@ execute "/opt/homebrew/bin/dockutil --add ~/Documents --view list --display fold
 
 execute "/opt/homebrew/bin/dockutil --add ~/Downloads --view list --display folder --sort name --section others --allhomes" \
     "Add Downloads to the dock"
-
-execute "killall ""Dock"" &> /dev/null" \
-    "Restart the dock"

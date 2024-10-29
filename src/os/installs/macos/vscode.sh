@@ -23,11 +23,16 @@ printf "\n"
 # install_plugin "EditorConfig" "EditorConfig.EditorConfig"
 # install_plugin "MarkdownLint" "DavidAnson.vscode-markdownlint"
 # install_plugin "Vim" "vscodevim.vim"
+install_plugin "Catppuccin Theme" "catppuccin.catppuccin-vsc"
+install_plugin "Catppuccin Icons" "catppuccin.catppuccin-vsc-icons"
 install_plugin "Docker" "ms-azuretools.vscode-docker"
-install_plugin "Material Icon Theme" "pkief.material-icon-theme"
-install_plugin "Material Product Icons" "pkief.material-product-icons"
 install_plugin "File Icons" "vscode-icons-team.vscode-icons"
 install_plugin "Material Theme" "zhuangtongfa.material-theme"
+install_plugin "Material Icon Theme" "pkief.material-icon-theme"
+install_plugin "Material Product Icons" "pkief.material-product-icons"
+install_plugin "NIX Flake Formatter" "jnoortheen.nix-ide"
+install_plugin "Terraform Formatter" "hashicorp.terraform"
+install_plugin "YAML Formatter" "redhat.vscode-yaml"
 
 # Close VSCode
 osascript -e 'quit app "Visual Studio Codium"'
