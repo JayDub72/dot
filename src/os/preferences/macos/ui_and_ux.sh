@@ -38,7 +38,7 @@ execute "sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEna
 execute "defaults write com.apple.screencapture disable-shadow -bool true" \
     "Disable shadow in screenshots"
 
-execute "defaults write com.apple.screencapture location -string '$HOME/Desktop'" \
+execute "defaults write com.apple.screencapture location -string '~/Pictures/Screenshots'" \
     "Save screenshots to the Desktop"
 
 execute "defaults write com.apple.screencapture show-thumbnail -bool false" \

@@ -47,6 +47,7 @@ alias q="exit"
 # Lock screen.
 
 alias afk="osascript -e 'tell application \"System Events\" to sleep'"
+alias clean="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -10,6 +10,7 @@ create_directories() {
     declare -a DIRECTORIES=(
         "$HOME/Documents/Docker"
         "$HOME/Documents/github"
+        "$HOME/Pictures/Screenshots"
     )
 
     for i in "${DIRECTORIES[@]}"; do
